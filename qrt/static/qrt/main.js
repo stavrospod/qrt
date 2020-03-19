@@ -5,16 +5,19 @@ var urls = [
     "https://www.app.com",
 ]
 
-const randomurl = urls[Math.floor(Math.random() * urls.length)];
+var listlength = urls.length
 
-document.addEventListener('DOMContentLoaded', () =>{
-    document.querySelector(".btn-primary").onclick = openwebsite
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.btn-primary').onclick = () => {
+        var random_url_number = getRandomInt(listlength)
+        window.open(urls[random_url_number])
+    }
 })
 
 
-
-
-function openwebsite(){
-    console.log(randomurl)    
-    window.open("https://www.test.com")
-}
