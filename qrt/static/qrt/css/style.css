@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -14,4 +15,12 @@ body{
 .jumbotron_main{
     margin: 0px;
     background-color: #83bdf7;
+}
+
+.btn-primary{
+    margin-top: 40px;
+}
+
+.lead{
+    margin-top: 30px;
 }
